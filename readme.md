@@ -1,55 +1,55 @@
 # RouteG04 MVC Project
 
-## نبذة عن المشروع
+## Overview
 
-مشروع ASP.NET MVC مبني على معمارية ثلاثية الطبقات لضمان تنظيم الكود وسهولة الصيانة والتطوير المستقبلي.
+An ASP.NET MVC project built with a three-tier architecture to keep the code organized, maintainable, and easy to evolve.
 
-## البنية الأساسية
+## Architecture
 
-المشروع مقسم إلى ثلاث طبقات منفصلة:
+The solution is divided into three separate layers:
 
-**RouteG04.PL - Presentation Layer**
-الطبقة المسؤولة عن واجهة المستخدم والتحكم في طلبات HTTP. تحتوي على Controllers و Views الخاصة بالتطبيق.
+**RouteG04.PL — Presentation Layer**  
+Responsible for the user interface and handling HTTP requests. Contains the application’s Controllers and Views.
 
-**RouteG04.BLL - Business Logic Layer**
-تحتوي على منطق الأعمال وقواعد التطبيق. هذه الطبقة تعمل كحلقة وصل بين طبقة العرض وطبقة البيانات.
+**RouteG04.BLL — Business Logic Layer**  
+Implements business rules and application logic. Acts as the intermediary between the presentation and data layers.
 
-**RouteG04.DAL - Data Access Layer**
-مسؤولة عن التعامل مع قاعدة البيانات وتنفيذ عمليات القراءة والكتابة.
+**RouteG04.DAL — Data Access Layer**  
+Handles database operations and implements CRUD functionality.
 
-## التقنيات المستخدمة
+## Tech Stack
 
 - ASP.NET MVC
 - C#
-- Entity Framework (إن وجد)
+- Entity Framework (if used)
 
-## متطلبات التشغيل
+## Prerequisites
 
-- Visual Studio 2012 أو أحدث
+- Visual Studio 2012 or later
 - .NET Framework
-- SQL Server (حسب متطلبات قاعدة البيانات)
+- SQL Server (depending on your database setup)
 
-## طريقة التشغيل
+## Getting Started
 
-1. استنساخ المستودع على جهازك
+1. Clone the repository to your machine:
 ```bash
 git clone https://github.com/shi7a505/.Net-project.git
 ```
 
-2. فتح ملف الحل `RouteG04MVCProject.sln` من خلال Visual Studio
+2. Open the solution file `RouteG04MVCProject.sln` in Visual Studio.
 
-3. استعادة حزم NuGet في حال طلب ذلك
+3. Restore NuGet packages if prompted.
 
-4. تعديل connection string في ملف web.config ليتوافق مع إعدادات قاعدة البيانات لديك
+4. Update the connection string in `web.config` to match your database settings.
 
-5. تشغيل المشروع
+5. Run the project.
 
-## ملاحظات
+## Notes
 
-- تأكد من تحديث connection strings قبل التشغيل
-- يمكن تطوير المشروع بإضافة features جديدة في الطبقات المناسبة
-- الالتزام بنمط Three-Tier Architecture يسهل عملية التطوير والصيانة
+- Ensure the connection strings are configured before running the application.
+- New features should be added to the appropriate layer to keep responsibilities separated.
+- Following the three-tier architecture simplifies development, testing, and maintenance.
 
-## الترخيص
+## License
 
-المشروع متاح للاستخدام والتطوير.
+This project is available for use and development.

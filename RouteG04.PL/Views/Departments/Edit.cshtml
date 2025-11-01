@@ -1,0 +1,44 @@
+﻿@using RouteG04.PL.ViewModel
+@using RouteG04.PL.ViewModel.DepartmentViewModel
+@model DepartmentEditViewModel
+@* @model DepartmentDetailsDTO *@
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="card border border-primary">
+    <div class="card-body">
+        <h1>Edit @Model.Name Department</h1>
+
+        <form asp-action="Edit" method="post">
+
+            <div class="form-group mb-3">
+                <label class="form-label" asp-for="Code"></label>
+                <input asp-for="Code" class="form-control" />
+                <span asp-validation-for="Code" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label class="form-label" asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label class="form-label" asp-for="description"></label>
+                <textarea class="form-control" asp-for="description" cols="12" rows="12"></textarea>
+            </div>
+            <div class="form-group  col-12">
+                <label class="col-form-label" asp-for="DateOfCreation">CreatedOn</label>
+                <input asp-for="DateOfCreation" class="form-control" readonly />
+            </div>
+            <div asp-validation-summary="All"></div>
+            <div class="mt-4 m-auto">
+                <input class="btn btn-primary" type="submit" value="Update Department" />
+                <a asp-action="Index" class="btn btn-outline-dark">Back to list</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+

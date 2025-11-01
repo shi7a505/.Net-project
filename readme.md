@@ -50,6 +50,4 @@ git clone https://github.com/shi7a505/.Net-project.git
 - New features should be added to the appropriate layer to keep responsibilities separated.
 - Following the three-tier architecture simplifies development, testing, and maintenance.
 
-## License
 
-This project is available for use and development.

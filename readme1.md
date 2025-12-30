@@ -3,7 +3,7 @@
 
 ## 1️⃣ **DTO Layer (Data Transfer Objects) - طبقة نقل البيانات**
 
-### 📁 **DTO/Department/**
+###  **DTO/Department/**
 
 #### **📄 DepartmentsDTO.cs**
 كائن بسيط لعرض قائمة الأقسام (Get All).
@@ -84,7 +84,7 @@
 
 ## 3️⃣ **Services Layer - طبقة الخدمات**
 
-### 📁 **Services/Interfaces/**
+###  **Services/Interfaces/**
 
 #### **📄 IDepartmentService.cs**
 الـ Interface اللي بيحدد العمليات المتاحة على الأقسام.
@@ -100,7 +100,7 @@
 
 ---
 
-### 📁 **Services/Classes/**
+###  **Services/Classes/**
 
 #### **📄 DepartmentService.cs**
 التطبيق الفعلي لـ `IDepartmentService`.
